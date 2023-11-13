@@ -1,0 +1,163 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+}
+
+/* Добавляем стили для списка автомобилей */
+/* Добавляем стили для списка автомобилей и машин */
+.car-list {
+    display: grid; /* Используем сетку для отображения машин */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Автоматически заполняем столбцы, минимальная ширина 250px */
+    gap: 20px; /* Расстояние между блоками машин */
+    padding: 20px;
+}
+
+.car {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Добавляем стиль для кнопки Details */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Добавляем стили для кнопок Войти и Регистрация */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.auth-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.auth-button:hover {
+    background-color: #0056b3;
+}
+
+/* Добавляем стили для изображений автомобилей */
+.car img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0; /* скругление верхних углов изображения */
+}
+
+/* Добавляем стили для логотипа */
+.logo {
+    max-width: 100px; /* Задаем максимальную ширину логотипа */
+    height: auto;
+    margin-right: 10px; /* Задаем отступ справа от логотипа */
+}
+
+/* Добавляем стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Добавляем стили для кнопки закрытия */
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: #aaa; /* Цвет кнопки */
+}
+
+.close:hover {
+    color: #000; /* Цвет кнопки при наведении */
+}
+
+/* Добавляем стили для формы и опций конфигурации */
+#configForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#configForm label {
+    margin-bottom: 5px;
+}
+
+#configForm select {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#configForm button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#configForm button:hover {
+    background-color: #0056b3;
+}

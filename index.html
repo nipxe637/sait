@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugatti Auto Salon</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <img src="/img/bugatti_logo.png" alt="Bugatti Logo" class="logo">
+        <h1>Bugatti Auto Salon</h1>
+        <div class="auth-buttons">
+            <button class="auth-button" onclick="showLogin()">Войти</button>
+            <button class="auth-button" onclick="showRegistration()">Регистрация</button>
+        </div>
+    </header>
+
+    <div class="car-list">
+        <div class="car">
+            <img src="/img/bugatti_chiron.jpg" alt="Bugatti Chiron">
+            <h2>Bugatti Chiron</h2>
+            <p>Quad-turbocharged W16 engine, 1500 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+
+        <div class="car">
+            <img src="/img/bugatti_chiron.jpg" alt="Bugatti Chiron">
+            <h2>Bugatti Chiron</h2>
+            <p>Quad-turbocharged W16 engine, 1500 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+
+        <div class="car">
+            <img src="/img/bugatti_chiron.jpg" alt="Bugatti Chiron">
+            <h2>Bugatti Chiron</h2>
+            <p>Quad-turbocharged W16 engine, 1500 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+
+        <div class="car">
+            <img src="/img/bugatti_chiron.jpg" alt="Bugatti Chiron">
+            <h2>Bugatti Chiron</h2>
+            <p>Quad-turbocharged W16 engine, 1500 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+
+        <div class="car">
+            <img src="/img/bugatti_chiron.jpg" alt="Bugatti Chiron">
+            <h2>Bugatti Chiron</h2>
+            <p>Quad-turbocharged W16 engine, 1500 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+
+        <div class="car">
+            <img src="/img/bugatti_chiron.jpg" alt="Bugatti Chiron">
+            <h2>Bugatti Chiron</h2>
+            <p>Quad-turbocharged W16 engine, 1500 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+
+        <div class="car">
+            <img src="/img/bugatti_chiron.jpg" alt="Bugatti Chiron">
+            <h2>Bugatti Chiron</h2>
+            <p>Quad-turbocharged W16 engine, 1500 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+
+        <div class="car">
+            <img src="/img/bugatti_chiron.jpg" alt="Bugatti Chiron">
+            <h2>Bugatti Chiron</h2>
+            <p>Quad-turbocharged W16 engine, 1500 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+
+        <div class="car">
+            <img src="/img/bugatti_chiron.jpg" alt="Bugatti Chiron">
+            <h2>Bugatti Chiron</h2>
+            <p>Quad-turbocharged W16 engine, 1500 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+
+        <div class="car">
+            <img src="/img/bugatti_veyron.jpg" alt="Bugatti Veyron">
+            <h2>Bugatti Veyron</h2>
+            <p>Quad-turbocharged W16 engine, 1001 hp</p>
+            <button onclick="showConfiguration('veyron')">Выбор конфигурации</button>
+        </div>
+    </div>
+
+<!-- Добавляем блок для модального окна -->
+<div class="modal" id="configModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Выбор конфигурации</h2>
+
+        <!-- Форма выбора конфигурации -->
+        <form id="configForm">
+            <label for="color">Выберите цвет:</label>
+            <select id="color" name="color">
+                <option value="red">Красный</option>
+                <option value="blue">Синий</option>
+                <option value="black">Черный</option>
+            </select>
+
+            <label for="package">Выберите пакет:</label>
+            <select id="package" name="package">
+                <option value="standard">Стандартный</option>
+                <option value="premium">Премиум</option>
+            </select>
+
+            <button type="button" onclick="buyCar()">Купить</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer>
+        &copy; 2023 Bugatti Auto Salon
+    </footer>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
